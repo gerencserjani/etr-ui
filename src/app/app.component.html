@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span><a href="/">ETR</a></span>
+    <span class="spacer"></span>
+    <a mat-button routerLink="/teaching" *ngIf="auth.isAdmin()">Teaching</a>
+    <a mat-button routerLink="/education-data" *ngIf="auth.isLogged()">Profile</a>
+    <a mat-button routerLink="/subject-admission" *ngIf="auth.isLogged()">Subject admission</a>
+    <a mat-button routerLink="/users" *ngIf="auth.isAdmin()">Users</a>
+    <a mat-button routerLink="/classrooms" *ngIf="auth.isAdmin()">Classrooms</a>
+    <a mat-button routerLink="/courses" *ngIf="auth.isAdmin()">Courses</a>
+    <a mat-button routerLink="/majors" *ngIf="auth.isAdmin()">Majors</a>
+    <a mat-button routerLink="/register" routerLinkActive="active" *ngIf="!auth.isLogged()">Register</a>
+    <a mat-button routerLink="/login" *ngIf="!auth.isLogged()">Login</a>
+    <a mat-button routerLink="/login" *ngIf="auth.isLogged()" (click)="auth.logout()">Logout</a>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

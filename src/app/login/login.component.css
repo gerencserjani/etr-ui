@@ -1,0 +1,17 @@
+.my-card{
+  text-align:center;
+  justify-content: center;
+}
+.error {
+	color: red;
+}
+
+.my-card{
+  text-align:center;
+  justify-content:center;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
+  margin-bottom: 20px;
+  width:25%;
+}

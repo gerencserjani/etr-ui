@@ -1,0 +1,60 @@
+<mat-toolbar>
+  <span>Registration</span>
+</mat-toolbar>
+<mat-card class="my-card">
+  <mat-card-content>
+    <form class="registrationForm" [formGroup]="registrationForm" (ngSubmit)="onSubmit(registrationForm.value)">
+      <mat-label class="error" *ngIf="warningMessage">There's an error! Check the fields and their values.</mat-label>
+      <br>
+      <mat-form-field>
+        <mat-label>Full Name</mat-label>
+        <input matInput id="fname" formControlName="fname" name="fname" required>
+        <mat-icon matSuffix> perm_identity</mat-icon>
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput id="email" formControlName="email" name="email" type="email" ngModel [email]="true" required>
+
+        <mat-icon matSuffix>alternate_email</mat-icon>
+      </mat-form-field>
+      <p class="error" *ngIf="email.invalid && email.touched">Invalid e-mail format</p>
+      <br>
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput id="password" formControlName="password" name="password" [type]="hide ? 'password' : 'text'"
+          required>
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <mat-label>Gender</mat-label>
+        <input matInput id="sex" formControlName="sex" name="sex" required>
+        <mat-icon matSuffix>supervised_user_circle</mat-icon>
+      </mat-form-field>
+      <br>
+
+      <mat-form-field>
+        <mat-label>Date of Birth</mat-label>
+        <input matInput id="birth_date" formControlName="birth_date" [matDatepicker]="picker" required>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <section class="example-section">
+
+        <mat-radio-group>
+          <mat-radio-button class="example-margin genderSpace" id="student" value="1" (click)="student()" required>
+            Student
+          </mat-radio-button>
+          <mat-radio-button class="example-margin genderSpace" id="teacher" value="0" (click)="teacher()" required>
+            Teacher
+          </mat-radio-button>
+        </mat-radio-group>
+      </section>
+      <br>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" type="submit" (click)="onSubmit(registrationForm.value)">REGISTER</button>
+  </mat-card-actions>
+</mat-card>

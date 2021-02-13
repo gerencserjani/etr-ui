@@ -1,0 +1,38 @@
+.mat-table{
+  width: 50%;
+  margin: auto;
+  text-align:center;
+  justify-content: center;
+  margin-bottom:20px;
+}
+
+.mat-toolbar{
+  width: 50%;
+  margin: auto;
+  margin-top:20px;
+}
+
+
+
+.mat-header-cell {
+  justify-content:center;
+  text-align:center;
+  align-items: center;
+   }
+
+   .mat-row{
+    justify-content:center;
+  text-align:center;
+   }
+
+   .mat-cell{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   }
+
+   .mat-sort-header {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }

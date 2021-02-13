@@ -1,0 +1,24 @@
+
+.my-card{
+  text-align:center;
+  justify-content:center;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
+  margin-bottom: 20px;
+  width:25%;
+}
+
+.mat-table{
+  width: 70%;
+  margin: auto;
+  text-align:center;
+  justify-content: center;
+  margin-bottom:20px;
+}
+
+.mat-header-cell{
+text-align:center;
+justify-content: center;
+}
+

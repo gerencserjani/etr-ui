@@ -1,0 +1,84 @@
+.my-card{
+  text-align: center;
+  justify-content: center;
+
+}
+
+
+.editDiv{
+  justify-content: center;
+  text-align:center;
+}
+
+h3 {
+  margin: 10px 0;
+  }
+
+  h6 {
+  margin: 5px 0;
+  text-transform: uppercase;
+  }
+
+  p {
+  font-size: 14px;
+  line-height: 21px;
+  }
+
+
+.card-container {
+  background-color: #231E39;
+  border-radius: 25px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+  color: #B3B8CD;
+  padding: 30px 0 0;
+  width: 350px;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+  }
+
+  .card-container img {
+  border: 1px solid #B3B8CD;
+  border-radius: 50%;
+  padding: 7px;
+  height: 150px;
+  width: 150px;
+
+  }
+
+  .my-card{
+    text-align:center;
+    justify-content:center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+    margin-bottom: 20px;
+    width:25%;
+  }
+
+  .card-container{
+    margin-top:20px;
+    margin-bottom: 20px;
+  }
+
+.appl{
+  width: 85%;
+  margin:auto;
+}
+
+.mat-table{
+  width: 85%;
+  margin: auto;
+  margin-bottom:20px;
+  text-align:center;
+  justify-content: center;
+}
+
+.mat-header-cell{
+text-align:center;
+justify-content: center;
+}
+
+.mat-select{
+  padding-top : 5px;
+}
